@@ -10,7 +10,7 @@ this api will generate data for trades
 
 # REST API
 
-The REST API to the example app is described below.
+The REST API to the trade app is described below.
 ### Request
 
 `GET /`
