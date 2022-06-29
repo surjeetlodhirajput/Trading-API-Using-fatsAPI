@@ -152,9 +152,7 @@ curl -X 'GET' \ 'http://localhost:8000/trades' \ -H 'accept: application/json'
     date: Wed,29 Jun 2022 09:25:27 GMT 
     server: uvicorn 
 
-    {
-  "asset_class": "Stocks",
-  "counterparty": "Individual",
+   {"asset_class": "Stocks","counterparty": "Individual",
   "instrument_id": "AMZN",
   "instrument_name": "Amazon",
   "trade_date_time": "2022-06-29T09:05:24.996000+00:00",
@@ -182,9 +180,8 @@ curl -X 'GET' \ 'http://localhost:8000/trades' \ -H 'accept: application/json'
     content-type: application/json 
     date: Wed,29 Jun 2022 09:27:37 GMT 
     server: uvicorn 
-    {
-  "detail": "trade not found"
-    }
+    
+    {"detail": "trade not found"}
 
 ## Create another new trade
 
@@ -214,8 +211,7 @@ curl -X 'POST' \ 'http://localhost:8000/create-trade/' \ -H 'accept: application
  date: Wed,29 Jun 2022 09:29:22 GMT 
  server: uvicorn 
 
-{
-  "asset_class": "Stocks",
+{  "asset_class": "Stocks",
   "counterparty": "Individual",
   "instrument_id": "AMZN",
   "instrument_name": "Amazon",
@@ -254,9 +250,7 @@ curl -X 'POST' \ 'http://localhost:8000/create-trade/' \ -H 'accept: application
  content-type: application/json 
  date: Wed,29 Jun 2022 09:35:06 GMT 
  server: uvicorn 
- {
-  "detail": "trade id already exist"
- }
+ { "detail": "trade id already exist"}
 
 ## searching trade 
 ### Request
