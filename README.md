@@ -38,7 +38,6 @@ curl -X 'GET' \ 'http://localhost:8000/trades' \ -H 'accept: application/json'
     content-type: application/json 
     date: Wed,29 Jun 2022 09:20:55 GMT 
     server: uvicorn 
-    "[
   {
     "asset_class": "Stocks",
     "counterparty": "Individual Investor",
@@ -137,7 +136,6 @@ curl -X 'GET' \ 'http://localhost:8000/trades' \ -H 'accept: application/json'
     "trade_id": "10",
     "trader": "Bana babu"
   }
-]"
 
 ## Get a specific trade
 
